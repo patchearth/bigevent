@@ -16,7 +16,6 @@ $(function () {
     })
     $('#file').on('change', function (e) {
         var url = URL.createObjectURL(e.target.files[0])
-        console.log(url);
         $image
             .cropper('destroy')
             .attr('src', url)
